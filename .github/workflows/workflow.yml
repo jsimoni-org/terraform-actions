@@ -4,6 +4,8 @@ on:
   pull_request:
     branches:
       - master
+    paths:
+      - 'terraform/*'
 
 jobs:
   validate:
@@ -11,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v1
+        uses: actions/checkout@master
 
       - name: Run a Terraform init
         uses: docker://hashicorp/terraform:0.12.24
