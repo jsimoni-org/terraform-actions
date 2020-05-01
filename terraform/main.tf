@@ -10,6 +10,7 @@ resource "aws_instance" "example" {
     Name        = "Test Instance"
     Creator     = "ckilpatrick@ipipeline.com"
     Environment = "Sandbox"
+    Product     = "baby_yoda"
     Terraform   = true
   }
 }
