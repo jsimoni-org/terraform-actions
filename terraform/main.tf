@@ -8,6 +8,6 @@ resource "aws_instance" "example" {
 
   tags = {
     Name = "Test Instance"
-    Terraform = false
+    Terraform = true
   }
 }
