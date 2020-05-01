@@ -7,7 +7,7 @@ resource "aws_instance" "example" {
 
   tags = {
     Name = "Test Instance"
-    Creator = "ckilpatrick@ipipeline.com"
+    Creator = "ckilpatrick"
     Terraform = true
   }
 }
