@@ -2,7 +2,7 @@ name: 'Checkov Security Scan'
 on:
   - pull_request
 env:
-  tf_working_dir: ''
+  tf_working_dir: .
 jobs:
   checkov-job:
     name: 'checkov-action'
