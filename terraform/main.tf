@@ -3,17 +3,17 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-0323c3dd2da7fb37d"
-  instance_type = "t2.micro"
+  ami    = "ami-0323c3dd2da7fb37d"
+  instance_type    = "t2.micro"
 
   root_block_device {
-    encrypted = true
+    encrypted          = true
   }
 
   tags = {
-    Name        = "Test Instance"
+    Name   = "Test Instance"
     Creator     = "ckilpatrick@ipipeline.com"
-    Environment = "Sandbox"
+    Environment     = "Sandbox"
     Product     = "ccoe"
     Terraform   = true
   }
