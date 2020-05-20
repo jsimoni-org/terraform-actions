@@ -1,10 +1,6 @@
 name: 'Terraform GitHub Actions'
 on:
-  pull_request:
-    branches:
-      - master
-    paths-ignore:
-      - '.github/**'
+  - pull_request
 env:
   tf_version: 'latest'
   tf_working_dir: '.'
