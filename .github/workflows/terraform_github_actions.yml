@@ -3,8 +3,6 @@ on:
   pull_request:
     branches:
       - master
-    paths-ignore:
-      - '.github/**'
 env:
   tf_version: 'latest'
   tf_working_dir: '.'
