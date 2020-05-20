@@ -1,10 +1,6 @@
 name: 'Generate Terraform docs'
 on:
-  pull_request:
-    branches:
-      - master
-    paths-ignore:
-      - '.github/**'
+  - pull_request
 env:
   tf_working_dir: '.'
 jobs:
