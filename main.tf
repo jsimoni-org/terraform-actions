@@ -15,7 +15,7 @@ resource "aws_instance" "example" {
     Creator     = "ckilpatrick@ipipeline.com"
     Customer    = "Null"
     Environment = "QA"
-    Product     = "CCOE"
+    Product     = "test"
     Terraform   = true
   }
 }
@@ -33,7 +33,7 @@ resource "aws_instance" "example_2" {
     Creator     = "ckilpatrick@ipipeline.com"
     Customer    = "Null"
     Environment = "QA"
-    Product     = "CCOE"
+    Product     = "test"
     Terraform   = true
   }
 }
