@@ -22,6 +22,8 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          git-user-name: ckilpatrick20
+          git-user-email: ckilpatrick@ipipeline.com
           skip-version-file: true
       - name: Enable "include administrators" branch protection
         uses: benjefferies/branch-protection-bot@master
