@@ -5,6 +5,7 @@ on:
       - master
     paths-ignore:
       - '.github/**'
+      - 'CHANGELOG.md'
 
 jobs:
   build:
@@ -18,12 +19,12 @@ jobs:
            access-token: ${{ secrets.ACCESS_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          git-user-name: ckilpatrick20
-          git-user-email: ckilpatrick@ipipeline.com
+          github-token: ${{ secrets.ACCESS_TOKEN }}
           skip-version-file: true
       - name: Enable "include administrators" branch protection
         uses: benjefferies/branch-protection-bot@master
