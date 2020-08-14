@@ -32,7 +32,7 @@ resource "aws_instance" "example_2" {
     Name        = "Test Instance 2"
     Creator     = "ckilpatrick@ipipeline.com"
     Customer    = "Null"
-    Environment = "Sandbox"
+    Environment = "QA"
     Product     = "test"
     Terraform   = true
   }
