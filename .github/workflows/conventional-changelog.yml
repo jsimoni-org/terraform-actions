@@ -12,11 +12,6 @@ jobs:
     name: Connventional Changelog Generator
     runs-on: ubuntu-latest
     steps:
-      - name: Temporarily disable "include administrators" branch protection
-        uses: benjefferies/branch-protection-bot@master
-        if: always()
-        with:
-           access-token: ${{ secrets.ACCESS_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -26,8 +21,3 @@ jobs:
         with:
           github-token: ${{ secrets.ACCESS_TOKEN }}
           skip-version-file: true
-      - name: Enable "include administrators" branch protection
-        uses: benjefferies/branch-protection-bot@master
-        if: always()  # Force to always run this step to ensure "include administrators" is always turned back on
-        with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
