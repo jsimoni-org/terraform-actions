@@ -20,7 +20,7 @@ resource "aws_instance" "example" {
     Name        = "Test Instance"
     Creator     = "ckilpatrick@ipipeline.com"
     Customer    = "Null"
-    Environment = "QA"
+    Environment = "Sandbox"
     Product     = "test"
     Terraform   = true
   }
@@ -44,7 +44,7 @@ resource "aws_instance" "example_2" {
     Name        = "Test Instance 2"
     Creator     = "ckilpatrick@ipipeline.com"
     Customer    = "Null"
-    Environment = "QA"
+    Environment = "Sandbox"
     Product     = "test"
     Terraform   = true
   }
