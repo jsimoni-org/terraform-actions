@@ -11,7 +11,8 @@ resource "aws_instance" "example" {
   }
 
   metadata_options {
-    http_tokens = "required"
+    http_endpoint = "enabled"
+    http_tokens   = "required"
   }
 
   tags = {
@@ -33,7 +34,8 @@ resource "aws_instance" "example_2" {
   }
 
   metadata_options {
-    http_tokens = "required"
+    http_endpoint = "enabled"
+    http_tokens   = "required"
   }
 
   tags = {
