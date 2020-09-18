@@ -20,4 +20,6 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.SERVICE_TOKEN }}
+          git-user-email: ckilpatrick20@gmail.com
+          git-user-name: ckilpatricktest
           skip-version-file: true
