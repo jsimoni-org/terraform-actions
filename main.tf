@@ -10,6 +10,10 @@ resource "aws_instance" "example" {
     encrypted = true
   }
 
+  metadata_options {
+    http_tokens = "required"
+  }
+
   tags = {
     Name        = "Test Instance"
     Creator     = "ckilpatrick@ipipeline.com"
@@ -26,6 +30,10 @@ resource "aws_instance" "example_2" {
 
   root_block_device {
     encrypted = true
+  }
+
+  metadata_options {
+    http_tokens = "required"
   }
 
   tags = {
