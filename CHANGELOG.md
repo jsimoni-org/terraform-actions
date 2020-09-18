@@ -1,4 +1,16 @@
-# 0.1.0 (2020-08-14)
+# [0.2.0](https://github.com/jsimoni-org/terraform-actions/compare/v0.1.0...v0.2.0) (2020-09-18)
+
+
+### Features
+
+* **Terraform:** another cool feature that will allow this pull request to pass validation checks ([4ce8689](https://github.com/jsimoni-org/terraform-actions/commit/4ce86895099496487b71dddc25d0a4bb851ad7f9))
+* **Terraform:** cool new ground breaking feature added to create instances ([2b65b70](https://github.com/jsimoni-org/terraform-actions/commit/2b65b70c6ff946e2a72e0094ba8a51e9596d97c7))
+* **Terraform:** feature change to environment ([7d262a5](https://github.com/jsimoni-org/terraform-actions/commit/7d262a5062df8a33e36d41b89535b772b874a24b))
+* **Terraform:** introducing new feature that hopefully makes this work ([e27e580](https://github.com/jsimoni-org/terraform-actions/commit/e27e580eac059cc742cd338fdb231420af35c08a))
+
+
+
+# [0.1.0](https://github.com/jsimoni-org/terraform-actions/compare/091898994cacfd51feb029534621e839f6bf8ec8...v0.1.0) (2020-08-14)
 
 
 ### Bug Fixes
